@@ -6,15 +6,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.time.LocalDateTime;
 
-//@Entity
-//@Table(name = "Expense_Category")
+@Entity
+@Table(name = "Expense_Category")
 public class ExpenseCategory {
 
-    //@Id
-    //@GeneratedValue
+    @Id
+    @GeneratedValue
     private Long id;
 
-    private LocalDateTime creationDateTime;
+    private LocalDateTime creationDateTime = LocalDateTime.now();
 
     private String categoryName;
 

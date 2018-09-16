@@ -15,7 +15,7 @@ public class Expense {
     //@GeneratedValue
     private Long id;
 
-    @Column(nullable = false)
+   // @Column(nullable = false)
     private String expenseTitle;
 
     private PaymentMethod method;
@@ -36,7 +36,7 @@ public class Expense {
     }
 
     public Expense(String expenseTitle, PaymentMethod method, String expensePlace, BigDecimal expenseAmount, ExpenseCategory category, LocalDate expenseDate, LocalDateTime creationDateTime, boolean deleted) {
-        //this.id = id;
+        this.id = id;
         this.expenseTitle = expenseTitle;
         this.method = method;
         this.expensePlace = expensePlace;
